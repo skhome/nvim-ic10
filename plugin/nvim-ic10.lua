@@ -4,6 +4,7 @@ vim.api.nvim_create_autocmd("User", {
 		require("nvim-treesitter.parsers").ic10 = {
 			install_info = {
 				url = "https://github.com/skhome/tree-sitter-ic10",
+				branch = "main",
 			},
 		}
 	end,
