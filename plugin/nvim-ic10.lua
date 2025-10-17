@@ -10,6 +10,13 @@ vim.api.nvim_create_autocmd("User", {
 	end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "ic10" },
+	callback = function()
+		vim.treesitter.start()
+	end,
+})
+
 vim.filetype.add({
 	extension = {
 		ic10 = "ic10",
