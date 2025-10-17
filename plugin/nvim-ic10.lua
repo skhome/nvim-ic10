@@ -10,4 +10,10 @@ vim.api.nvim_create_autocmd("User", {
 	end,
 })
 
+vim.filetype.add({
+	extension = {
+		ic10 = "ic10",
+	},
+})
+
 vim.treesitter.language.register("ic10", "ic10")
